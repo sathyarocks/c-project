@@ -1,0 +1,86 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+int option1,option2,option3,c1,c2,c3,amount1=0,amount2=0,amount3=0,bill;
+int price[400]={50,80,100,60,30,55,45,50,100,80,200,70,30,80,20};
+clrscr();
+printf("\n\n\n");
+printf("********Welcome to Cascade Restaurant********\n\n"); 
+printf("\n\t     T.T.K. Road,Kilpauk,Chennai-10\t\n");
+printf("             Contact no:9840675429                 \n");
+printf("               ************************                    \n");
+printf("                     *****************                           \n");
+printf("                            *********                                \n");
+printf("                                ****                                    \n");
+printf("                                  **                                     \n");
+printf("   ****This hotel is famous for its food which is clean and hygienic and you can have all \n");
+printf("   kinds of varities.The  food available here is finger licking good.I hope you guys\n");
+printf("   enjoy the food!!!****                                                             \n");
+printf("  We have a lot of varities.Please suit yourself\n");
+printf("  Let's look at the varities\n");
+printf("           X.BREAKFAST                        \n");
+printf(" Option       Item                Range    \n");
+printf("  1            sandwich              50       \n");
+printf("  2            cheese toast          80      \n");
+printf("  3            grilled sandwich   100     \n");
+printf("  4            idli                         60     \n");
+printf("  5            dosa                       30     \n");
+printf("  6            chapathi                55      \n");
+printf("  7            pongal                   45      \n");
+printf("  8            bread omlet         50        \n");
+do
+{
+printf(" May i have your option\n");
+scanf("%d",&option1);
+amount1+=price[option1-1];
+printf("if you want to continue press 20 else if you want to exit press 0\n");
+scanf("%d",&c1);
+}
+while(c1!=0);
+printf(" Total amount for breakfast is\n");
+printf("amount1=%d\n",amount1);
+
+
+printf("           Y.LUNCH                             \n");
+printf(" Option       Item                Range   \n");
+printf("  10           Biriyani                 100    \n");
+printf("  11           chicken fried rice   80     \n");
+printf("  12           fish fry                  200    \n");
+printf("  13           vegetable pulao      70     \n");
+do
+{
+printf(" May i have your option\n");
+scanf("%d",&option2);
+amount2+=price[option2-1];
+printf("if you want to continue press 20 else if you want to exit press 0\n");
+scanf("%d",&c2);
+}
+while(c2!=0);
+printf(" Total amount for breakfast is\n");
+printf("amount2=%d\n",amount2);
+
+printf("           Z.Tea &Coffee                     \n");
+printf(" Option       Item                Range   \n");
+printf("  16           Coffee                30         \n");
+printf("  17           ice tea                80         \n");
+printf("  18           tea                      20         \n");
+do
+{
+printf(" May i have your option\n");
+scanf("%d",&option3);
+amount3+=price[option3-1];
+printf("if you want to continue press 20 else if you want to exit press 0\n");
+scanf("%d",&c3);
+}
+while(c3!=0);
+printf(" Total amount for tea&coffee is\n");
+printf("amount3=%d\n",amount3);
+bill=amount1+amount2+amount3;
+printf("Your bill is Rs.%d\n",bill);
+printf("Enjoy the fooood\n");
+printf(" *******Come back again ********\n");
+printf(" *****Hope you enjoyed the food!!!!!!!!\n");
+getch();
+return 0;
+}

@@ -1,0 +1,53 @@
+                                                   RESTAURANT   BILLING    SYSTEM
+
+Description :
+
+This  project helps us to order a list of food items from the given menu card and helps us to
+compute the total bill. It is one of the real time applications and can be used in restaurants to
+do the billing. Using this c program source code you can be able to choose many number of 
+items from menu card as per your choice and it helps us to compute the final bill. The 
+menu consists of list of items starting from the morning breakfast till snacks in the evening.
+In order to display prices for food items i have used the integer array  and i have declared the 
+prices within the integer array. Menu variety has been displayed within the printf function.
+In order to choose a variety of foods  from the menu i have used the DO WHILE LOOP. Inside
+the do while loop i have asked the customer's choice of food and if they want to continue
+ordering i have asked them to press 20 else if they want to exit they can press 0. The WHILE
+condition states that it will continue to execute unless it is 0.In this similar way i have used
+a do while loop for Breakfast,Brunch and Snacks . I have printed the amount for breakfast,
+brunch,lunch separately and atlast i have computed the total bill.This is how a restaurant bill is 
+computed using this source code.I have enclosed the algorithm.
+
+ALGORITHM:
+
+STEP1:  start
+STEP2:  read option1,option2,option3,c1,c2,c3,bill
+STEP3:  initialize amount1=0,amount2=0,amount3=0
+STEP4:  read prices in an array
+STEP5:  print the given menu options and the details 
+             about the restaurant.
+STEP6:  use a do while loop for breakfast.
+             read the customer's option.
+STEP7:  amount1+=price[option1-1]
+STEP8:  print for continue ordering else exit.
+STEP9:  read the customer's choice
+STEP10:  while customer's choice not equal to exit
+STEP11:  print the breakfast amount
+STEP12:  use a do while loop for breakfast.
+               read the customer's option.
+STEP13:  amount2+=price[option2-1]
+STEP14:  print for continue ordering else exit.
+STEP15:  read the customer's choice
+STEP16:  while customer's choice not equal to exit
+STEP17:  print the brunch amount
+STEP18:  use a do while loop for snacks.
+               read the customer's option.
+STEP19:  amount3+=price[option3-1]
+STEP20:  print for continue ordering else exit.
+STEP21:  read the customer's choice
+STEP22:  while customer's choice not equal to exit
+STEP23:  print the snacks amount
+STEP24:  bill=amount1+amount2+amount3
+STEP25:  print bill
+STEP26:  Stop
+
+
